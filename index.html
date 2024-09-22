@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Color Genarator</title>
+    <!-- tailwind/daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+  </head>
+  <body>
+    <main class="w-4/5 mx-auto mt-20">
+      <section
+        id="section"
+        class="flex flex-col justify-center items-center gap-4 text-center"
+      >
+        <div>
+          <h3 class="text-2xl md:text-4xl text-indigo-500 font-semibold">
+            Generate A Random Color
+          </h3>
+        </div>
+        <div id="clr-box" class="rounded-xl h-[200px] w-[200px] border-2"></div>
+        <div><h2 id="color-code" class="text-black text-2xl"></h2></div>
+        <div>
+          <button
+            id="generate-btn"
+            class="bg-blue-400 text-black px-4 py-2 rounded-xl"
+          >
+            Generate
+          </button>
+        </div>
+        <div>
+          <button
+            id="copy-code"
+            class="md:text-xl text-black px-2 text-base border bg-blue-200 rounded-xl"
+          >
+            Copy Color Code
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
